@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143807281EB9678C0009EC0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807041EB9678C0009EC0B /* AppDelegate.m */; };
+		1438072E1EB968FF0009EC0B /* CYMainTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438072D1EB968FF0009EC0B /* CYMainTabbarViewController.m */; };
+		143807311EB96B3E0009EC0B /* CYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807301EB96B3E0009EC0B /* CYBaseViewController.m */; };
+		143807371EB96BDB0009EC0B /* CYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807361EB96BDB0009EC0B /* CYBaseTableViewController.m */; };
+		1438073A1EB96BF70009EC0B /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807391EB96BF70009EC0B /* MeViewController.m */; };
+		1438073D1EB96C630009EC0B /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438073C1EB96C630009EC0B /* DiscoverViewController.m */; };
+		143807401EB96C830009EC0B /* TrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438073F1EB96C830009EC0B /* TrainViewController.m */; };
+		143807431EB96CA70009EC0B /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807421EB96CA70009EC0B /* StoreViewController.m */; };
 		14D2E5101EB8CCFA008C9D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E50F1EB8CCFA008C9D90 /* main.m */; };
-		14D2E5131EB8CCFA008C9D90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E5121EB8CCFA008C9D90 /* AppDelegate.m */; };
-		14D2E5161EB8CCFA008C9D90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E5151EB8CCFA008C9D90 /* ViewController.m */; };
 		14D2E5191EB8CCFA008C9D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D2E5171EB8CCFA008C9D90 /* Main.storyboard */; };
 		14D2E51C1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E51A1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld */; };
 		14D2E51E1EB8CCFA008C9D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D2E51D1EB8CCFA008C9D90 /* Assets.xcassets */; };
@@ -17,12 +23,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		143807031EB9678C0009EC0B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		143807041EB9678C0009EC0B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1438072C1EB968FF0009EC0B /* CYMainTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYMainTabbarViewController.h; sourceTree = "<group>"; };
+		1438072D1EB968FF0009EC0B /* CYMainTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYMainTabbarViewController.m; sourceTree = "<group>"; };
+		1438072F1EB96B3E0009EC0B /* CYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseViewController.h; sourceTree = "<group>"; };
+		143807301EB96B3E0009EC0B /* CYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseViewController.m; sourceTree = "<group>"; };
+		143807351EB96BDB0009EC0B /* CYBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseTableViewController.h; sourceTree = "<group>"; };
+		143807361EB96BDB0009EC0B /* CYBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseTableViewController.m; sourceTree = "<group>"; };
+		143807381EB96BF70009EC0B /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		143807391EB96BF70009EC0B /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		1438073B1EB96C630009EC0B /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		1438073C1EB96C630009EC0B /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		1438073E1EB96C830009EC0B /* TrainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainViewController.h; sourceTree = "<group>"; };
+		1438073F1EB96C830009EC0B /* TrainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainViewController.m; sourceTree = "<group>"; };
+		143807411EB96CA70009EC0B /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		143807421EB96CA70009EC0B /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
 		14D2E50B1EB8CCFA008C9D90 /* ChaoYue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaoYue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D2E50F1EB8CCFA008C9D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14D2E5111EB8CCFA008C9D90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		14D2E5121EB8CCFA008C9D90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14D2E5141EB8CCFA008C9D90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		14D2E5151EB8CCFA008C9D90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		14D2E5181EB8CCFA008C9D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14D2E51B1EB8CCFA008C9D90 /* ChaoYue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChaoYue.xcdatamodel; sourceTree = "<group>"; };
 		14D2E51D1EB8CCFA008C9D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +59,305 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143807021EB9678C0009EC0B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				143807031EB9678C0009EC0B /* AppDelegate.h */,
+				143807041EB9678C0009EC0B /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		143807051EB9678C0009EC0B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				143807061EB9678C0009EC0B /* Controller */,
+				143807071EB9678C0009EC0B /* Model */,
+				143807081EB9678C0009EC0B /* Request */,
+				143807091EB9678C0009EC0B /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		143807061EB9678C0009EC0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1438072F1EB96B3E0009EC0B /* CYBaseViewController.h */,
+				143807301EB96B3E0009EC0B /* CYBaseViewController.m */,
+				143807351EB96BDB0009EC0B /* CYBaseTableViewController.h */,
+				143807361EB96BDB0009EC0B /* CYBaseTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		143807071EB9678C0009EC0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		143807081EB9678C0009EC0B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		143807091EB9678C0009EC0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1438070A1EB9678C0009EC0B /* Competition（赛事） */ = {
+			isa = PBXGroup;
+			children = (
+				1438070B1EB9678C0009EC0B /* Controller */,
+				1438070C1EB9678C0009EC0B /* Model */,
+				1438070D1EB9678C0009EC0B /* Request */,
+				1438070E1EB9678C0009EC0B /* View */,
+			);
+			name = "Competition（赛事）";
+			path = Competition;
+			sourceTree = "<group>";
+		};
+		1438070B1EB9678C0009EC0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1438070C1EB9678C0009EC0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1438070D1EB9678C0009EC0B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		1438070E1EB9678C0009EC0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1438070F1EB9678C0009EC0B /* Discover（发现） */ = {
+			isa = PBXGroup;
+			children = (
+				143807101EB9678C0009EC0B /* Controller */,
+				143807111EB9678C0009EC0B /* Model */,
+				143807121EB9678C0009EC0B /* View */,
+			);
+			name = "Discover（发现）";
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		143807101EB9678C0009EC0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1438073B1EB96C630009EC0B /* DiscoverViewController.h */,
+				1438073C1EB96C630009EC0B /* DiscoverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		143807111EB9678C0009EC0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		143807121EB9678C0009EC0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		143807131EB9678C0009EC0B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				143807141EB9678C0009EC0B /* Controller */,
+				143807151EB9678C0009EC0B /* Model */,
+				143807161EB9678C0009EC0B /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		143807141EB9678C0009EC0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		143807151EB9678C0009EC0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		143807161EB9678C0009EC0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		143807171EB9678C0009EC0B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				143807181EB9678C0009EC0B /* Controller */,
+				143807191EB9678C0009EC0B /* Model */,
+				1438071A1EB9678C0009EC0B /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		143807181EB9678C0009EC0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1438072C1EB968FF0009EC0B /* CYMainTabbarViewController.h */,
+				1438072D1EB968FF0009EC0B /* CYMainTabbarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		143807191EB9678C0009EC0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1438071A1EB9678C0009EC0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1438071B1EB9678C0009EC0B /* Me（我的） */ = {
+			isa = PBXGroup;
+			children = (
+				1438071C1EB9678C0009EC0B /* Controller */,
+				1438071D1EB9678C0009EC0B /* Model */,
+				1438071E1EB9678C0009EC0B /* View */,
+			);
+			name = "Me（我的）";
+			path = Me;
+			sourceTree = "<group>";
+		};
+		1438071C1EB9678C0009EC0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				143807381EB96BF70009EC0B /* MeViewController.h */,
+				143807391EB96BF70009EC0B /* MeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1438071D1EB9678C0009EC0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1438071E1EB9678C0009EC0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1438071F1EB9678C0009EC0B /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		143807201EB9678C0009EC0B /* Store（商城） */ = {
+			isa = PBXGroup;
+			children = (
+				143807211EB9678C0009EC0B /* Controller */,
+				143807221EB9678C0009EC0B /* Model */,
+				143807231EB9678C0009EC0B /* View */,
+			);
+			name = "Store（商城）";
+			path = Store;
+			sourceTree = "<group>";
+		};
+		143807211EB9678C0009EC0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				143807411EB96CA70009EC0B /* StoreViewController.h */,
+				143807421EB96CA70009EC0B /* StoreViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		143807221EB9678C0009EC0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		143807231EB9678C0009EC0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		143807241EB9678C0009EC0B /* Train（训练） */ = {
+			isa = PBXGroup;
+			children = (
+				143807251EB9678C0009EC0B /* Controller */,
+				143807261EB9678C0009EC0B /* Model */,
+				143807271EB9678C0009EC0B /* View */,
+			);
+			name = "Train（训练）";
+			path = Train;
+			sourceTree = "<group>";
+		};
+		143807251EB9678C0009EC0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1438073E1EB96C830009EC0B /* TrainViewController.h */,
+				1438073F1EB96C830009EC0B /* TrainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		143807261EB9678C0009EC0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		143807271EB9678C0009EC0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		14D2E5021EB8CCFA008C9D90 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +377,19 @@
 		14D2E50D1EB8CCFA008C9D90 /* ChaoYue */ = {
 			isa = PBXGroup;
 			children = (
-				14D2E5111EB8CCFA008C9D90 /* AppDelegate.h */,
-				14D2E5121EB8CCFA008C9D90 /* AppDelegate.m */,
-				14D2E5141EB8CCFA008C9D90 /* ViewController.h */,
-				14D2E5151EB8CCFA008C9D90 /* ViewController.m */,
+				143807021EB9678C0009EC0B /* Application */,
+				143807051EB9678C0009EC0B /* Base */,
+				143807171EB9678C0009EC0B /* Main */,
+				143807241EB9678C0009EC0B /* Train（训练） */,
+				1438070F1EB9678C0009EC0B /* Discover（发现） */,
+				1438070A1EB9678C0009EC0B /* Competition（赛事） */,
+				143807201EB9678C0009EC0B /* Store（商城） */,
+				1438071B1EB9678C0009EC0B /* Me（我的） */,
+				143807131EB9678C0009EC0B /* Login */,
+				1438071F1EB9678C0009EC0B /* Publish */,
 				14D2E5171EB8CCFA008C9D90 /* Main.storyboard */,
 				14D2E51D1EB8CCFA008C9D90 /* Assets.xcassets */,
-				14D2E51F1EB8CCFA008C9D90 /* LaunchScreen.storyboard */,
 				14D2E5221EB8CCFA008C9D90 /* Info.plist */,
-				14D2E51A1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld */,
 				14D2E50E1EB8CCFA008C9D90 /* Supporting Files */,
 			);
 			path = ChaoYue;
@@ -77,6 +398,8 @@
 		14D2E50E1EB8CCFA008C9D90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14D2E51F1EB8CCFA008C9D90 /* LaunchScreen.storyboard */,
+				14D2E51A1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld */,
 				14D2E50F1EB8CCFA008C9D90 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -154,10 +477,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14D2E5161EB8CCFA008C9D90 /* ViewController.m in Sources */,
-				14D2E5131EB8CCFA008C9D90 /* AppDelegate.m in Sources */,
 				14D2E51C1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld in Sources */,
+				143807401EB96C830009EC0B /* TrainViewController.m in Sources */,
+				1438073D1EB96C630009EC0B /* DiscoverViewController.m in Sources */,
 				14D2E5101EB8CCFA008C9D90 /* main.m in Sources */,
+				143807431EB96CA70009EC0B /* StoreViewController.m in Sources */,
+				1438073A1EB96BF70009EC0B /* MeViewController.m in Sources */,
+				143807371EB96BDB0009EC0B /* CYBaseTableViewController.m in Sources */,
+				143807281EB9678C0009EC0B /* AppDelegate.m in Sources */,
+				1438072E1EB968FF0009EC0B /* CYMainTabbarViewController.m in Sources */,
+				143807311EB96B3E0009EC0B /* CYBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +645,7 @@
 				14D2E5271EB8CCFA008C9D90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
