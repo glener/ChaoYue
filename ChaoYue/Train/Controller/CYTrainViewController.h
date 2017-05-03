@@ -1,5 +1,5 @@
 //
-//  TrainViewController.h
+//  CYTrainViewController.h
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
@@ -8,6 +8,6 @@
 
 #import "CYBaseViewController.h"
 
-@interface TrainViewController : CYBaseViewController
+@interface CYTrainViewController : CYBaseViewController
 
 @end

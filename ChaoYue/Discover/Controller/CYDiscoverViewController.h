@@ -1,5 +1,5 @@
 //
-//  DiscoverViewController.h
+//  CYDiscoverViewController.h
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
@@ -8,6 +8,6 @@
 
 #import "CYBaseViewController.h"
 
-@interface DiscoverViewController : CYBaseViewController
+@interface CYDiscoverViewController : CYBaseViewController
 
 @end

@@ -1,18 +1,18 @@
 //
-//  DiscoverViewController.m
+//  CYDiscoverViewController.m
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
 //  Copyright © 2017年 again. All rights reserved.
 //
 
-#import "DiscoverViewController.h"
+#import "CYDiscoverViewController.h"
 
-@interface DiscoverViewController ()
+@interface CYDiscoverViewController ()
 
 @end
 
-@implementation DiscoverViewController
+@implementation CYDiscoverViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

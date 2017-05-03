@@ -11,10 +11,12 @@
 		1438072E1EB968FF0009EC0B /* CYMainTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438072D1EB968FF0009EC0B /* CYMainTabbarViewController.m */; };
 		143807311EB96B3E0009EC0B /* CYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807301EB96B3E0009EC0B /* CYBaseViewController.m */; };
 		143807371EB96BDB0009EC0B /* CYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807361EB96BDB0009EC0B /* CYBaseTableViewController.m */; };
-		1438073A1EB96BF70009EC0B /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807391EB96BF70009EC0B /* MeViewController.m */; };
-		1438073D1EB96C630009EC0B /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438073C1EB96C630009EC0B /* DiscoverViewController.m */; };
-		143807401EB96C830009EC0B /* TrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438073F1EB96C830009EC0B /* TrainViewController.m */; };
-		143807431EB96CA70009EC0B /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807421EB96CA70009EC0B /* StoreViewController.m */; };
+		143807491EB96E620009EC0B /* CYTrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807481EB96E620009EC0B /* CYTrainViewController.m */; };
+		1438074C1EB96E850009EC0B /* CYDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438074B1EB96E850009EC0B /* CYDiscoverViewController.m */; };
+		1438074F1EB96E9A0009EC0B /* CYCompetitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438074E1EB96E9A0009EC0B /* CYCompetitionViewController.m */; };
+		143807521EB96EB00009EC0B /* CYStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807511EB96EB00009EC0B /* CYStoreViewController.m */; };
+		143807551EB96EC80009EC0B /* CYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807541EB96EC80009EC0B /* CYMeViewController.m */; };
+		143807581EB96FF80009EC0B /* CYBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143807571EB96FF80009EC0B /* CYBaseNavigationViewController.m */; };
 		14D2E5101EB8CCFA008C9D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E50F1EB8CCFA008C9D90 /* main.m */; };
 		14D2E5191EB8CCFA008C9D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D2E5171EB8CCFA008C9D90 /* Main.storyboard */; };
 		14D2E51C1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E51A1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld */; };
@@ -31,14 +33,18 @@
 		143807301EB96B3E0009EC0B /* CYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseViewController.m; sourceTree = "<group>"; };
 		143807351EB96BDB0009EC0B /* CYBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseTableViewController.h; sourceTree = "<group>"; };
 		143807361EB96BDB0009EC0B /* CYBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseTableViewController.m; sourceTree = "<group>"; };
-		143807381EB96BF70009EC0B /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
-		143807391EB96BF70009EC0B /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		1438073B1EB96C630009EC0B /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
-		1438073C1EB96C630009EC0B /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
-		1438073E1EB96C830009EC0B /* TrainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainViewController.h; sourceTree = "<group>"; };
-		1438073F1EB96C830009EC0B /* TrainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainViewController.m; sourceTree = "<group>"; };
-		143807411EB96CA70009EC0B /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
-		143807421EB96CA70009EC0B /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		143807471EB96E620009EC0B /* CYTrainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTrainViewController.h; sourceTree = "<group>"; };
+		143807481EB96E620009EC0B /* CYTrainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTrainViewController.m; sourceTree = "<group>"; };
+		1438074A1EB96E850009EC0B /* CYDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYDiscoverViewController.h; sourceTree = "<group>"; };
+		1438074B1EB96E850009EC0B /* CYDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYDiscoverViewController.m; sourceTree = "<group>"; };
+		1438074D1EB96E9A0009EC0B /* CYCompetitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCompetitionViewController.h; sourceTree = "<group>"; };
+		1438074E1EB96E9A0009EC0B /* CYCompetitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCompetitionViewController.m; sourceTree = "<group>"; };
+		143807501EB96EB00009EC0B /* CYStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYStoreViewController.h; sourceTree = "<group>"; };
+		143807511EB96EB00009EC0B /* CYStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYStoreViewController.m; sourceTree = "<group>"; };
+		143807531EB96EC80009EC0B /* CYMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYMeViewController.h; sourceTree = "<group>"; };
+		143807541EB96EC80009EC0B /* CYMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYMeViewController.m; sourceTree = "<group>"; };
+		143807561EB96FF80009EC0B /* CYBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseNavigationViewController.h; sourceTree = "<group>"; };
+		143807571EB96FF80009EC0B /* CYBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseNavigationViewController.m; sourceTree = "<group>"; };
 		14D2E50B1EB8CCFA008C9D90 /* ChaoYue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaoYue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D2E50F1EB8CCFA008C9D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14D2E5181EB8CCFA008C9D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +92,8 @@
 				143807301EB96B3E0009EC0B /* CYBaseViewController.m */,
 				143807351EB96BDB0009EC0B /* CYBaseTableViewController.h */,
 				143807361EB96BDB0009EC0B /* CYBaseTableViewController.m */,
+				143807561EB96FF80009EC0B /* CYBaseNavigationViewController.h */,
+				143807571EB96FF80009EC0B /* CYBaseNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +134,8 @@
 		1438070B1EB9678C0009EC0B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1438074D1EB96E9A0009EC0B /* CYCompetitionViewController.h */,
+				1438074E1EB96E9A0009EC0B /* CYCompetitionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,8 +175,8 @@
 		143807101EB9678C0009EC0B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1438073B1EB96C630009EC0B /* DiscoverViewController.h */,
-				1438073C1EB96C630009EC0B /* DiscoverViewController.m */,
+				1438074A1EB96E850009EC0B /* CYDiscoverViewController.h */,
+				1438074B1EB96E850009EC0B /* CYDiscoverViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,8 +273,8 @@
 		1438071C1EB9678C0009EC0B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				143807381EB96BF70009EC0B /* MeViewController.h */,
-				143807391EB96BF70009EC0B /* MeViewController.m */,
+				143807531EB96EC80009EC0B /* CYMeViewController.h */,
+				143807541EB96EC80009EC0B /* CYMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -304,8 +314,8 @@
 		143807211EB9678C0009EC0B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				143807411EB96CA70009EC0B /* StoreViewController.h */,
-				143807421EB96CA70009EC0B /* StoreViewController.m */,
+				143807501EB96EB00009EC0B /* CYStoreViewController.h */,
+				143807511EB96EB00009EC0B /* CYStoreViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -338,8 +348,8 @@
 		143807251EB9678C0009EC0B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1438073E1EB96C830009EC0B /* TrainViewController.h */,
-				1438073F1EB96C830009EC0B /* TrainViewController.m */,
+				143807471EB96E620009EC0B /* CYTrainViewController.h */,
+				143807481EB96E620009EC0B /* CYTrainViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -478,14 +488,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D2E51C1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld in Sources */,
-				143807401EB96C830009EC0B /* TrainViewController.m in Sources */,
-				1438073D1EB96C630009EC0B /* DiscoverViewController.m in Sources */,
 				14D2E5101EB8CCFA008C9D90 /* main.m in Sources */,
-				143807431EB96CA70009EC0B /* StoreViewController.m in Sources */,
-				1438073A1EB96BF70009EC0B /* MeViewController.m in Sources */,
 				143807371EB96BDB0009EC0B /* CYBaseTableViewController.m in Sources */,
+				143807551EB96EC80009EC0B /* CYMeViewController.m in Sources */,
+				143807521EB96EB00009EC0B /* CYStoreViewController.m in Sources */,
+				1438074F1EB96E9A0009EC0B /* CYCompetitionViewController.m in Sources */,
+				143807581EB96FF80009EC0B /* CYBaseNavigationViewController.m in Sources */,
 				143807281EB9678C0009EC0B /* AppDelegate.m in Sources */,
+				1438074C1EB96E850009EC0B /* CYDiscoverViewController.m in Sources */,
 				1438072E1EB968FF0009EC0B /* CYMainTabbarViewController.m in Sources */,
+				143807491EB96E620009EC0B /* CYTrainViewController.m in Sources */,
 				143807311EB96B3E0009EC0B /* CYBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

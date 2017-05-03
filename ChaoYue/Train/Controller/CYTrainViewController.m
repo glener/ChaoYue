@@ -1,18 +1,18 @@
 //
-//  MeViewController.m
+//  CYTrainViewController.m
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
 //  Copyright © 2017年 again. All rights reserved.
 //
 
-#import "MeViewController.h"
+#import "CYTrainViewController.h"
 
-@interface MeViewController ()
+@interface CYTrainViewController ()
 
 @end
 
-@implementation MeViewController
+@implementation CYTrainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,18 +1,18 @@
 //
-//  TrainViewController.m
+//  CYCompetitionViewController.m
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
 //  Copyright © 2017年 again. All rights reserved.
 //
 
-#import "TrainViewController.h"
+#import "CYCompetitionViewController.h"
 
-@interface TrainViewController ()
+@interface CYCompetitionViewController ()
 
 @end
 
-@implementation TrainViewController
+@implementation CYCompetitionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

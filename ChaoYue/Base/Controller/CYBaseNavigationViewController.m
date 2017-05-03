@@ -1,18 +1,18 @@
 //
-//  StoreViewController.m
+//  CYBaseNavigationViewController.m
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
 //  Copyright © 2017年 again. All rights reserved.
 //
 
-#import "StoreViewController.h"
+#import "CYBaseNavigationViewController.h"
 
-@interface StoreViewController ()
+@interface CYBaseNavigationViewController ()
 
 @end
 
-@implementation StoreViewController
+@implementation CYBaseNavigationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

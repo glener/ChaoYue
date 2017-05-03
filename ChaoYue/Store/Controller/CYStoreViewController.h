@@ -1,5 +1,5 @@
 //
-//  StoreViewController.h
+//  CYStoreViewController.h
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
@@ -8,6 +8,6 @@
 
 #import "CYBaseViewController.h"
 
-@interface StoreViewController : CYBaseViewController
+@interface CYStoreViewController : CYBaseViewController
 
 @end

@@ -1,5 +1,5 @@
 //
-//  MeViewController.h
+//  CYMeViewController.h
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
@@ -8,6 +8,6 @@
 
 #import "CYBaseTableViewController.h"
 
-@interface MeViewController : CYBaseTableViewController
+@interface CYMeViewController : CYBaseTableViewController
 
 @end
