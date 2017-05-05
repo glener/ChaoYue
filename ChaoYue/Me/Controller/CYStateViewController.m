@@ -1,18 +1,18 @@
 //
-//  CYBaseViewController.m
+//  CYStateViewController.m
 //  ChaoYue
 //
-//  Created by again on 2017/5/3.
+//  Created by again on 2017/5/5.
 //  Copyright © 2017年 again. All rights reserved.
 //
 
-#import "CYBaseViewController.h"
+#import "CYStateViewController.h"
 
-@interface CYBaseViewController ()
+@interface CYStateViewController ()
 
 @end
 
-@implementation CYBaseViewController
+@implementation CYStateViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,15 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)pushVc:(UIViewController *)vc {
-    if ([vc isKindOfClass:[UIViewController class]] == NO) return ;
-    if (self.navigationController == nil) return ;
-    if (vc.hidesBottomBarWhenPushed == NO) {
-        vc.hidesBottomBarWhenPushed = YES;
-    }
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

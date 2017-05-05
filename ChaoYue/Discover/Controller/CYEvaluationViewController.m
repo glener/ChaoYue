@@ -1,18 +1,18 @@
 //
-//  CYBaseViewController.m
+//  CYEvaluationViewController.m
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
 //  Copyright © 2017年 again. All rights reserved.
 //
 
-#import "CYBaseViewController.h"
+#import "CYEvaluationViewController.h"
 
-@interface CYBaseViewController ()
+@interface CYEvaluationViewController ()
 
 @end
 
-@implementation CYBaseViewController
+@implementation CYEvaluationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,15 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)pushVc:(UIViewController *)vc {
-    if ([vc isKindOfClass:[UIViewController class]] == NO) return ;
-    if (self.navigationController == nil) return ;
-    if (vc.hidesBottomBarWhenPushed == NO) {
-        vc.hidesBottomBarWhenPushed = YES;
-    }
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

@@ -8,6 +8,6 @@
 
 #import "CYBaseViewController.h"
 
-@interface CYBaseTableViewController : CYBaseViewController
+@interface CYBaseTableViewController : CYBaseViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

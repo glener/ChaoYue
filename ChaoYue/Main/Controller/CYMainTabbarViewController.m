@@ -8,7 +8,7 @@
 
 #import "CYMainTabbarViewController.h"
 #import "CYBaseNavigationViewController.h"
-#import "CYTrainViewController.h"
+//#import "CYTrainViewController.h"
 #import "CYDiscoverViewController.h"
 #import "CYCompetitionViewController.h"
 #import "CYStoreViewController.h"
@@ -24,6 +24,7 @@
     
     // 设置为不透明
     [[UITabBar appearance] setTranslucent:NO];
+//    [UITabBar appearance].clipsToBounds = NO;
     // 设置背景颜色
     [UITabBar appearance].barTintColor = [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:1];
     
@@ -42,14 +43,14 @@
     // 选中状态
     NSMutableDictionary *selectAtts = [NSMutableDictionary dictionary];
     selectAtts[NSFontAttributeName] = [UIFont systemFontOfSize:10];
-    selectAtts[NSForegroundColorAttributeName] = [UIColor colorWithRed:36/255.0 green:198/255.0 blue:138/255.0 alpha:1];
+    selectAtts[NSForegroundColorAttributeName] = kNormalColor;
     [item setTitleTextAttributes:selectAtts forState:UIControlStateSelected];
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addChildViewControllerWithClassname:[CYTrainViewController description] imagename:@"train" title:@"训练"];
+//    [self addChildViewControllerWithClassname:[CYTrainViewController description] imagename:@"train" title:@"训练"];
     [self addChildViewControllerWithClassname:[CYDiscoverViewController description] imagename:@"discover" title:@"发现"];
     [self addChildViewControllerWithClassname:[CYCompetitionViewController description]imagename:@"competition" title:@"赛事"];
     [self addChildViewControllerWithClassname:[CYStoreViewController description] imagename:@"store" title:@"商城"];

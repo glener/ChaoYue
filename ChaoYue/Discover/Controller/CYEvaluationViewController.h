@@ -1,5 +1,5 @@
 //
-//  CYBaseViewController.h
+//  CYEvaluationViewController.h
 //  ChaoYue
 //
 //  Created by again on 2017/5/3.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CYBaseViewController : UIViewController
-- (void)pushVc:(UIViewController *)vc;
+@interface CYEvaluationViewController : UIViewController
+
 @end
