@@ -16,8 +16,6 @@
 @property (weak,nonatomic) UILabel *nameLabel;
 /** 用户头像*/
 @property (weak,nonatomic) UIImageView *userIcon;
-/** 背景 */
-@property (weak,nonatomic) UIImageView *backgroundImage;
 /** */
 @property (weak,nonatomic) UIImageView *whiteIcon;
 
@@ -48,11 +46,12 @@
 //        [backgroundImage setImage:resultImage];
         
         
-        self.backgroundImage.contentMode = UIViewContentModeScaleToFill;
+        self.backgroundImage.contentMode = UIViewContentModeScaleAspectFill;
         self.backgroundImage.alpha = 0.9;
         
         _backgroundImage = backgroundImage;
         backgroundImage.layer.masksToBounds = YES;
+    
         [self addSubview:backgroundImage];
         
         

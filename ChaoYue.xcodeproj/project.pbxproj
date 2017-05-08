@@ -32,10 +32,15 @@
 		145E59001EBC47EF006FE89D /* CYUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 145E58FF1EBC47EF006FE89D /* CYUserInfoModel.m */; };
 		145E59031EBC4858006FE89D /* CYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 145E59021EBC4858006FE89D /* CYBaseModel.m */; };
 		145E59081EBC5694006FE89D /* userImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 145E59071EBC5694006FE89D /* userImage.png */; };
+		145E590B1EBC818D006FE89D /* CYBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145E590A1EBC818D006FE89D /* CYBaseTableViewCell.m */; };
 		146B6ABA1EBAD4000003D7BE /* CYUserToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B6AB91EBAD4000003D7BE /* CYUserToolView.m */; };
 		146B6ABD1EBAF9A20003D7BE /* CYUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B6ABC1EBAF9A20003D7BE /* CYUserHeaderView.m */; };
 		146B6AC01EBB36AF0003D7BE /* CYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B6ABF1EBB36AF0003D7BE /* CYSettingViewController.m */; };
 		146B6AC31EBB36C30003D7BE /* CYRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B6AC21EBB36C30003D7BE /* CYRemindViewController.m */; };
+		14B6A6E81EC001B00048C4F6 /* CYSignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6A6E61EC001B00048C4F6 /* CYSignTableViewCell.m */; };
+		14B6A6E91EC001B00048C4F6 /* CYSignTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B6A6E71EC001B00048C4F6 /* CYSignTableViewCell.xib */; };
+		14B6A6ED1EC016BB0048C4F6 /* CYImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6A6EB1EC016BB0048C4F6 /* CYImageTableViewCell.m */; };
+		14B6A6EE1EC016BB0048C4F6 /* CYImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B6A6EC1EC016BB0048C4F6 /* CYImageTableViewCell.xib */; };
 		14D2E5101EB8CCFA008C9D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E50F1EB8CCFA008C9D90 /* main.m */; };
 		14D2E5191EB8CCFA008C9D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D2E5171EB8CCFA008C9D90 /* Main.storyboard */; };
 		14D2E51C1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E51A1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld */; };
@@ -96,6 +101,8 @@
 		145E59011EBC4858006FE89D /* CYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseModel.h; sourceTree = "<group>"; };
 		145E59021EBC4858006FE89D /* CYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseModel.m; sourceTree = "<group>"; };
 		145E59071EBC5694006FE89D /* userImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userImage.png; sourceTree = "<group>"; };
+		145E59091EBC818D006FE89D /* CYBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseTableViewCell.h; sourceTree = "<group>"; };
+		145E590A1EBC818D006FE89D /* CYBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseTableViewCell.m; sourceTree = "<group>"; };
 		146B6AB81EBAD4000003D7BE /* CYUserToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYUserToolView.h; sourceTree = "<group>"; };
 		146B6AB91EBAD4000003D7BE /* CYUserToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYUserToolView.m; sourceTree = "<group>"; };
 		146B6ABB1EBAF9A20003D7BE /* CYUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYUserHeaderView.h; sourceTree = "<group>"; };
@@ -104,6 +111,12 @@
 		146B6ABF1EBB36AF0003D7BE /* CYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSettingViewController.m; sourceTree = "<group>"; };
 		146B6AC11EBB36C30003D7BE /* CYRemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRemindViewController.h; sourceTree = "<group>"; };
 		146B6AC21EBB36C30003D7BE /* CYRemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRemindViewController.m; sourceTree = "<group>"; };
+		14B6A6E51EC001B00048C4F6 /* CYSignTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSignTableViewCell.h; sourceTree = "<group>"; };
+		14B6A6E61EC001B00048C4F6 /* CYSignTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSignTableViewCell.m; sourceTree = "<group>"; };
+		14B6A6E71EC001B00048C4F6 /* CYSignTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYSignTableViewCell.xib; sourceTree = "<group>"; };
+		14B6A6EA1EC016BB0048C4F6 /* CYImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYImageTableViewCell.h; sourceTree = "<group>"; };
+		14B6A6EB1EC016BB0048C4F6 /* CYImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYImageTableViewCell.m; sourceTree = "<group>"; };
+		14B6A6EC1EC016BB0048C4F6 /* CYImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYImageTableViewCell.xib; sourceTree = "<group>"; };
 		14D2E50B1EB8CCFA008C9D90 /* ChaoYue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaoYue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D2E50F1EB8CCFA008C9D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14D2E5181EB8CCFA008C9D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,8 +151,8 @@
 			children = (
 				143807061EB9678C0009EC0B /* Controller */,
 				143807071EB9678C0009EC0B /* Model */,
-				143807081EB9678C0009EC0B /* Request */,
 				143807091EB9678C0009EC0B /* View */,
+				143807081EB9678C0009EC0B /* Request */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -178,6 +191,8 @@
 		143807091EB9678C0009EC0B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				145E59091EBC818D006FE89D /* CYBaseTableViewCell.h */,
+				145E590A1EBC818D006FE89D /* CYBaseTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,6 +396,12 @@
 				146B6ABC1EBAF9A20003D7BE /* CYUserHeaderView.m */,
 				145E58FB1EBC2E1E006FE89D /* CYUserHeaderToolButton.h */,
 				145E58FC1EBC2E1E006FE89D /* CYUserHeaderToolButton.m */,
+				14B6A6E51EC001B00048C4F6 /* CYSignTableViewCell.h */,
+				14B6A6E61EC001B00048C4F6 /* CYSignTableViewCell.m */,
+				14B6A6E71EC001B00048C4F6 /* CYSignTableViewCell.xib */,
+				14B6A6EA1EC016BB0048C4F6 /* CYImageTableViewCell.h */,
+				14B6A6EB1EC016BB0048C4F6 /* CYImageTableViewCell.m */,
+				14B6A6EC1EC016BB0048C4F6 /* CYImageTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,7 +651,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D2E5211EB8CCFA008C9D90 /* LaunchScreen.storyboard in Resources */,
+				14B6A6EE1EC016BB0048C4F6 /* CYImageTableViewCell.xib in Resources */,
 				14D2E51E1EB8CCFA008C9D90 /* Assets.xcassets in Resources */,
+				14B6A6E91EC001B00048C4F6 /* CYSignTableViewCell.xib in Resources */,
 				14D2E5191EB8CCFA008C9D90 /* Main.storyboard in Resources */,
 				145E59081EBC5694006FE89D /* userImage.png in Resources */,
 			);
@@ -643,6 +666,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B6A6ED1EC016BB0048C4F6 /* CYImageTableViewCell.m in Sources */,
+				14B6A6E81EC001B00048C4F6 /* CYSignTableViewCell.m in Sources */,
 				143807621EB9A9160009EC0B /* CYDiscoverTitleViewItemView.m in Sources */,
 				146B6AC01EBB36AF0003D7BE /* CYSettingViewController.m in Sources */,
 				14D2E51C1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld in Sources */,
@@ -659,6 +684,7 @@
 				143807521EB96EB00009EC0B /* CYStoreViewController.m in Sources */,
 				1438074F1EB96E9A0009EC0B /* CYCompetitionViewController.m in Sources */,
 				146B6AC31EBB36C30003D7BE /* CYRemindViewController.m in Sources */,
+				145E590B1EBC818D006FE89D /* CYBaseTableViewCell.m in Sources */,
 				145E59031EBC4858006FE89D /* CYBaseModel.m in Sources */,
 				145E58FA1EBC217A006FE89D /* CYFansViewController.m in Sources */,
 				145E58F71EBC2163006FE89D /* CYFollowViewController.m in Sources */,

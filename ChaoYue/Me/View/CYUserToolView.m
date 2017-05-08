@@ -78,7 +78,8 @@
 - (void)setupDivider
 {
     UIImageView *divider = [[UIImageView alloc] init];
-    divider.image = [UIImage imageNamed:@""];
+    divider.image = [UIImage imageNamed:@"divider"];
+    
     [self addSubview:divider];
     [self.dividers addObject:divider];
 }
@@ -110,7 +111,7 @@
     CGFloat btnH = self.frame.size.height;
     NSInteger btnCount = self.btns.count;
     NSInteger dividerCount = self.dividers.count;
-    CGFloat dividerW = 2;
+    CGFloat dividerW = 1;
     CGFloat btnW = (self.frame.size.width - dividerW * dividerCount) / btnCount;
     for (int i = 0; i<btnCount; i++) {
         UIButton *btn = self.btns[i];
@@ -118,8 +119,8 @@
         btn.frame = CGRectMake(btnX, btnY, btnW, btnH);
     }
     
-    CGFloat dividerH = btnH;
-    CGFloat dividerY = 0;
+    CGFloat dividerH = btnH - 20;
+    CGFloat dividerY = (btnH - dividerH) * 0.5;
     for (int j = 0; j < dividerCount; j++) {
         UIImageView *divider = self.dividers[j];
         UIButton *btn = self.btns[j];

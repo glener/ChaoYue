@@ -7,17 +7,20 @@
 //
 
 #import "CYMeViewController.h"
-//#import "CYUserToolView.h"
 #import "CYUserHeaderView.h"
 #import "CYSettingViewController.h"
 #import "CYRemindViewController.h"
 #import "CYStateViewController.h"
 #import "CYFollowViewController.h"
 #import "CYFansViewController.h"
+#import "CYSignTableViewCell.h"
+#import "CYImageTableViewCell.h"
 
-@interface CYMeViewController ()<CYUserHeaderViewDelegate>
+static NSString *signCell = @"CYSignTableViewCell";
+static NSString *imageCell = @"CYImageTableViewCell";
+
+@interface CYMeViewController ()<CYUserHeaderViewDelegate, UITextFieldDelegate>
 @property (nonatomic, copy) NSString *userImage;
-//@property (strong,nonatomic) CYUserToolView *userToolView;
 @property (strong,nonatomic) CYUserHeaderView *userHeaderView;
 @property (strong,nonatomic) UITableView *tableView;
 
@@ -27,6 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.tableView registerNib:[UINib nibWithNibName:signCell bundle:[NSBundle mainBundle]] forCellReuseIdentifier:signCell];
+    [self.tableView registerNib:[UINib nibWithNibName:imageCell bundle:[NSBundle mainBundle]] forCellReuseIdentifier:imageCell];
     //移动下来时取消透明度
     self.navigationController.navigationBar.translucent = YES;
     
@@ -40,7 +45,6 @@
 //    [self.tableView addSubview:backgroundImage];
 //    backgroundImage.contentMode = UIViewContentModeScaleAspectFill;
 //    backgroundImage.clipsToBounds = YES;
-    
     
 //    userBackgroundView.frame = CGRectMake(0, 0, kScreenWidth, userBackgroundView.frame.size.height);
 //    userBackgroundView.backgroundColor = kRGBColor(50, 50, 50);
@@ -56,18 +60,18 @@
 //    toolView.backgroundColor = [UIColor whiteColor];
 //    self.tableView.backgroundColor = [UIColor grayColor];
    
-    
     [self.view addSubview:self.tableView];
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 100, 0);
     self.tableView.contentOffset = CGPointMake(0, 0);
     self.tableView.contentSize = CGSizeMake(kScreenWidth, 500);
-    
+    self.tableView.separatorInset = UIEdgeInsetsZero;
     
     //设置头部不偏移64
-     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    [self.tableView.backgroundView addSubview:self.userHeaderView.backgroundImage];
 }
 
 - (CYUserHeaderView *)userHeaderView
@@ -80,15 +84,23 @@
     }
     return _userHeaderView;
 }
+
+#pragma mark - textfield
+//textfield的确认按钮点击后
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.view endEditing:YES];
+    return YES;
+}
+
 #pragma mark - tableViewDelegate
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 //{
 //    return 1;
 //}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-        return 10;
+        return 8;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -96,44 +108,102 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    if (section == 0) {
+
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 50)];
-        view.backgroundColor = [UIColor redColor];
+        view.backgroundColor = kRGBColor(222, 222, 222);
         return view;
-    } else {return nil;}
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *rid = @"";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:rid];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithFrame:self.view.frame];
-    }
-    return cell;
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:rid forIndexPath:indexPath];
+//    UITableViewCell *cell1 = [tableView registerNib:<#(nullable UINib *)#> forCellReuseIdentifier:<#(nonnull NSString *)#>
+
+        if (indexPath.row == 0) {
+            CYSignTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:signCell];
+//            if (cell == nil) {
+                cell.SignTextField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 0)];
+                cell.SignTextField.leftViewMode = UITextFieldViewModeAlways;
+                cell.SignTextField.font = kFont(13);
+                cell.SignTextField.placeholder = @"这家伙很懒，什么也没留下。。。";
+                cell.accessoryType = UITableViewCellAccessoryNone;
+            [cell.SignTextField addTarget:self action:@selector(signTextFieldDidChange:) forControlEvents:UIControlEventEditingDidEnd];
+            cell.SignTextField.delegate = self;
+            return cell;
+//            }
+        } else if (indexPath.row == 1) {
+            CYImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:imageCell];
+            cell.imageDetaillabel.text = @"8个相册";
+            UIScrollView *scr = [[UIScrollView alloc] init];
+            scr.backgroundColor = kNormalColor;
+            cell.imageScrollView = scr;
+            return cell;
+        } else {
+            static NSString *rid = @"";
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:rid];
+            if (cell == nil) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:rid];
+                cell.textLabel.text = @"运动";
+                cell.detailTextLabel.text = @"2项运动";
+                cell.textLabel.font = kFont(14);
+                cell.detailTextLabel.font = kFont(11);
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                cell.layoutMargins = UIEdgeInsetsZero;
+            }
+            return cell;
+        }
+//    return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 1) {
+        return 100;
+    } else return 30;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 1) {
+//        UIScrollView *scroll= [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 100)];
+//        
+//        [tableView addSubview:scroll];
+//        
+//        scroll.backgroundColor =  kNormalColor;
+    }
+}
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-//    CGFloat y =  scrollView.contentOffset.y ;
-//    NSLogRect(self.userImageView.backgroundImage.frame);
-//    NSLog(@"%f----", scrollView.contentOffset.y);
-////    if (y >-100) {
-////        CGRect frame = self.userImageView.backgroundImage.frame;
-////        frame.origin.y = y;
-////        frame.size.height = -y;
-////        self.userImageView.backgroundImage.frame = frame;
-////    }
-//    
-//    CGRect newFrame = self.userImageView.backgroundImage.frame;
-//    CGFloat settingViewOffsetY = 50 - scrollView.contentOffset.y;
-//    newFrame.size.height = settingViewOffsetY;
-////
+    [self.view endEditing:YES];
+    
+    CGFloat y =  scrollView.contentOffset.y ;
+//    if (y >-100) {
+//        CGRect frame = self.userImageView.backgroundImage.frame;
+//        frame.origin.y = y;
+//        frame.size.height = -y;
+//        self.userImageView.backgroundImage.frame = frame;
+//    }
+    if (y<0) {
+        
+//        CGRect newFrame = self.userHeaderView.backgroundImage.frame;
+        CGRect frame = self.userHeaderView.backgroundImage.frame;
+//        frame.origin.y = y;
+        CGFloat settingViewOffsetY = 200 - scrollView.contentOffset.y;
+        frame.size.height = settingViewOffsetY;
+        self.userHeaderView.backgroundImage.frame = frame;
+        NSLogRect(self.userHeaderView.backgroundImage.frame);
+    }
+//
 //    if (settingViewOffsetY < 50) {
 //        newFrame.size.height = 200;
 //    }
-//    self.userImageView.backgroundImage.frame = newFrame;
+}
+
+- (void)signTextFieldDidChange:(UITextField *)textField
+{
+//    NSLog(@"%@----", textField.text);
+    
 }
 
 - (void)LayoutSubviews

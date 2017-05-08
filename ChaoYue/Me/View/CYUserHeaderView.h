@@ -19,5 +19,7 @@
 @interface CYUserHeaderView : UIView
 @property (weak,nonatomic) id<CYUserHeaderViewDelegate> delegate;
 @property (strong,nonatomic) CYUserInfoModel *userInfoModel;
+/** 背景 */
+@property (weak,nonatomic) UIImageView *backgroundImage;
 
 @end
