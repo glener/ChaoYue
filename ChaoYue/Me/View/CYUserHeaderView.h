@@ -21,5 +21,7 @@
 @property (strong,nonatomic) CYUserInfoModel *userInfoModel;
 /** 背景 */
 @property (weak,nonatomic) UIImageView *backgroundImage;
+/** 用户头像*/
+@property (weak,nonatomic) UIImageView *userIcon;
 
 @end

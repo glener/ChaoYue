@@ -16,13 +16,13 @@
 #import "CYSignTableViewCell.h"
 #import "CYImageTableViewCell.h"
 
-static NSString *signCell = @"CYSignTableViewCell";
-static NSString *imageCell = @"CYImageTableViewCell";
 
 @interface CYMeViewController ()<CYUserHeaderViewDelegate, UITextFieldDelegate>
 @property (nonatomic, copy) NSString *userImage;
 @property (strong,nonatomic) CYUserHeaderView *userHeaderView;
 @property (strong,nonatomic) UITableView *tableView;
+@property (weak,nonatomic) CYSignTableViewCell *cell1;
+@property (weak,nonatomic) CYImageTableViewCell *cell2;
 
 @end
 
@@ -30,13 +30,16 @@ static NSString *imageCell = @"CYImageTableViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.tableView registerNib:[UINib nibWithNibName:signCell bundle:[NSBundle mainBundle]] forCellReuseIdentifier:signCell];
-    [self.tableView registerNib:[UINib nibWithNibName:imageCell bundle:[NSBundle mainBundle]] forCellReuseIdentifier:imageCell];
     //移动下来时取消透明度
     self.navigationController.navigationBar.translucent = YES;
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"searchIcon"] style:UIBarButtonItemStylePlain target:self action:@selector(settingItemClick)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"searchIcon"] style:UIBarButtonItemStylePlain target:self action:@selector(messageItemClick)];
+    
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(userIconDidClick)];
+    self.userHeaderView.userIcon.userInteractionEnabled = YES;
+    [self.userHeaderView.userIcon addGestureRecognizer:tap];
     
     //背景图片
 //    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"userImage"]];
@@ -72,6 +75,11 @@ static NSString *imageCell = @"CYImageTableViewCell";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView.backgroundView addSubview:self.userHeaderView.backgroundImage];
+}
+
+- (void)userIconDidClick
+{
+    
 }
 
 - (CYUserHeaderView *)userHeaderView
@@ -119,9 +127,15 @@ static NSString *imageCell = @"CYImageTableViewCell";
 {
 //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:rid forIndexPath:indexPath];
 //    UITableViewCell *cell1 = [tableView registerNib:<#(nullable UINib *)#> forCellReuseIdentifier:<#(nonnull NSString *)#>
-
+    
+//    static NSString *signCell = @"CYSignTableViewCell";
+//    static NSString *imageCell = @"CYImageTableViewCell";
+    
+//    [self.tableView registerNib:[UINib nibWithNibName:signCell bundle:[NSBundle mainBundle]] forCellReuseIdentifier:signCell];
+//    [self.tableView registerNib:[UINib nibWithNibName:imageCell bundle:[NSBundle mainBundle]] forCellReuseIdentifier:imageCell];
+    
         if (indexPath.row == 0) {
-            CYSignTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:signCell];
+            CYSignTableViewCell *cell = [[CYSignTableViewCell alloc] init];
 //            if (cell == nil) {
                 cell.SignTextField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 0)];
                 cell.SignTextField.leftViewMode = UITextFieldViewModeAlways;
@@ -133,7 +147,7 @@ static NSString *imageCell = @"CYImageTableViewCell";
             return cell;
 //            }
         } else if (indexPath.row == 1) {
-            CYImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:imageCell];
+            CYImageTableViewCell *cell = [[CYImageTableViewCell alloc] init];
             cell.imageDetaillabel.text = @"8个相册";
             UIScrollView *scr = [[UIScrollView alloc] init];
             scr.backgroundColor = kNormalColor;
@@ -192,7 +206,6 @@ static NSString *imageCell = @"CYImageTableViewCell";
         CGFloat settingViewOffsetY = 200 - scrollView.contentOffset.y;
         frame.size.height = settingViewOffsetY;
         self.userHeaderView.backgroundImage.frame = frame;
-        NSLogRect(self.userHeaderView.backgroundImage.frame);
     }
 //
 //    if (settingViewOffsetY < 50) {
@@ -215,6 +228,8 @@ static NSString *imageCell = @"CYImageTableViewCell";
 - (void)settingItemClick
 {
     CYSettingViewController *set = [[CYSettingViewController alloc] init];
+    
+    set.view.backgroundColor = kWhiteColor;
     [self.navigationController pushViewController:set animated:YES];
 }
 
@@ -222,6 +237,7 @@ static NSString *imageCell = @"CYImageTableViewCell";
 - (void)messageItemClick
 {
     CYRemindViewController *remind = [[CYRemindViewController alloc] init];
+    remind.view.backgroundColor = kWhiteColor;
     [self.navigationController pushViewController:remind animated:YES];
 }
 
@@ -245,12 +261,15 @@ static NSString *imageCell = @"CYImageTableViewCell";
     //动态
     if (itemType == CYPersonalCenterHeaderItemTypeState) {
         CYStateViewController *state = [[CYStateViewController alloc] init];
+        state.view.backgroundColor = kWhiteColor;
         [self pushVc:state];
     } else if (itemType == CYPersonalCenterHeaderItemTypeFollow) {
         CYFollowViewController *follow = [[CYFollowViewController alloc] init];
+        follow.view.backgroundColor = kWhiteColor;
         [self pushVc:follow];
     } else if (itemType == CYPersonalCenterHeaderItemTypeFans) {
         CYFansViewController *fans = [[CYFansViewController alloc] init];
+        fans.view.backgroundColor = kWhiteColor;
         [self pushVc:fans];
     }
 }

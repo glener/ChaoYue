@@ -14,8 +14,6 @@
 @property (weak,nonatomic) UILabel *cityLabel;
 /** 昵称*/
 @property (weak,nonatomic) UILabel *nameLabel;
-/** 用户头像*/
-@property (weak,nonatomic) UIImageView *userIcon;
 /** */
 @property (weak,nonatomic) UIImageView *whiteIcon;
 
@@ -66,6 +64,11 @@
         [self addSubview:userToolView];
     }
     return self;
+}
+
+- (void)userIconDidClick
+{
+    
 }
 
 //背景图片
@@ -143,7 +146,6 @@
     
     //封面背景
     _backgroundImage.frame = CGRectMake(0, 0, kScreenWidth, 200);
-    NSLogRect(_backgroundImage.frame);
     //头像
     CGFloat iconW = 80;
     CGFloat iconH = 80;

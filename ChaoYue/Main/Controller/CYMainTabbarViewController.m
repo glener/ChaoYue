@@ -51,8 +51,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [self addChildViewControllerWithClassname:[CYTrainViewController description] imagename:@"train" title:@"训练"];
-    [self addChildViewControllerWithClassname:[CYDiscoverViewController description] imagename:@"discover" title:@"发现"];
     [self addChildViewControllerWithClassname:[CYCompetitionViewController description]imagename:@"competition" title:@"赛事"];
+    [self addChildViewControllerWithClassname:[CYDiscoverViewController description] imagename:@"discover" title:@"发现"];
     [self addChildViewControllerWithClassname:[CYStoreViewController description] imagename:@"store" title:@"商城"];
     [self addChildViewControllerWithClassname:[CYMeViewController description] imagename:@"me" title:@"我的"];
     

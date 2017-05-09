@@ -7,6 +7,7 @@
 //
 
 #import "CYCompetitionViewController.h"
+#import "CYCompetitionToolView.h"
 
 @interface CYCompetitionViewController ()
 
@@ -16,7 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupItems];
+    
+    CYCompetitionToolView *toolView = [[CYCompetitionToolView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 60)];
+    [self.view addSubview:toolView];
+    
+    
+}
+
+- (void)setupItems
+{
+    self.navigationItem.title = @"赛事";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"searchIcon"] style:UIBarButtonItemStylePlain target:self action:@selector(searchItemClick)];
+    
+}
+
+- (void)searchItemClick
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

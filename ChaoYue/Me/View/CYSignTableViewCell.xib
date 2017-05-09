@@ -35,6 +35,7 @@
             <connections>
                 <outlet property="SignTextField" destination="mEX-cg-zul" id="k4u-6C-6zO"/>
             </connections>
+            <point key="canvasLocation" x="86" y="85"/>
         </tableViewCell>
     </objects>
 </document>
