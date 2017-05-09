@@ -8,28 +8,55 @@
 
 #import "CYCompetitionViewController.h"
 #import "CYCompetitionToolView.h"
+#import "CYCompetitionFirstView.h"
 
 @interface CYCompetitionViewController ()
+@property (strong,nonatomic) CYCompetitionFirstView *firstView;
 
 @end
 
 @implementation CYCompetitionViewController
 
+- (CYCompetitionFirstView *)firstView
+{
+    if (!_firstView) {
+        
+    }
+    return _firstView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupItems];
+    [self setupView];
     
-    CYCompetitionToolView *toolView = [[CYCompetitionToolView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 60)];
+    CYCompetitionToolView *toolView = [[CYCompetitionToolView alloc] initWithFrame:CGRectMake(0, 300, kScreenWidth, 60)];
     [self.view addSubview:toolView];
     
+    CYCompetitionFirstView *first = [[CYCompetitionFirstView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 200)];
+    first.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGame)];
+    [first addGestureRecognizer:tap];
+    _firstView = first;
+    [self.view addSubview:_firstView];
     
+}
+
+//监听赛事点击
+- (void)tapGame
+{
+    
+}
+
+- (void)setupView
+{
+
 }
 
 - (void)setupItems
 {
     self.navigationItem.title = @"赛事";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"searchIcon"] style:UIBarButtonItemStylePlain target:self action:@selector(searchItemClick)];
-    
 }
 
 - (void)searchItemClick

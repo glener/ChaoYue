@@ -69,6 +69,8 @@
 		14B6A73C1EC05DF10048C4F6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6A73B1EC05DF10048C4F6 /* LoginViewController.m */; };
 		14B6A73F1EC076B60048C4F6 /* CYCompetitionToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6A73E1EC076B60048C4F6 /* CYCompetitionToolView.m */; };
 		14B6A7431EC0808C0048C4F6 /* CYCompetitionToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6A7421EC0808C0048C4F6 /* CYCompetitionToolButton.m */; };
+		14CFB6231EC157B4000CEBD5 /* CYCompetitionFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFB6221EC157B4000CEBD5 /* CYCompetitionFirstView.m */; };
+		14CFB62A1EC19148000CEBD5 /* teamlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14CFB6291EC19148000CEBD5 /* teamlogo.png */; };
 		14D2E5101EB8CCFA008C9D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E50F1EB8CCFA008C9D90 /* main.m */; };
 		14D2E51C1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E51A1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld */; };
 		14D2E51E1EB8CCFA008C9D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D2E51D1EB8CCFA008C9D90 /* Assets.xcassets */; };
@@ -190,6 +192,9 @@
 		14B6A7401EC078210048C4F6 /* CYCompetionToolConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYCompetionToolConstant.h; sourceTree = "<group>"; };
 		14B6A7411EC0808C0048C4F6 /* CYCompetitionToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCompetitionToolButton.h; sourceTree = "<group>"; };
 		14B6A7421EC0808C0048C4F6 /* CYCompetitionToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCompetitionToolButton.m; sourceTree = "<group>"; };
+		14CFB6211EC157B4000CEBD5 /* CYCompetitionFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCompetitionFirstView.h; sourceTree = "<group>"; };
+		14CFB6221EC157B4000CEBD5 /* CYCompetitionFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCompetitionFirstView.m; sourceTree = "<group>"; };
+		14CFB6291EC19148000CEBD5 /* teamlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teamlogo.png; sourceTree = "<group>"; };
 		14D2E50B1EB8CCFA008C9D90 /* ChaoYue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaoYue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D2E50F1EB8CCFA008C9D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14D2E51B1EB8CCFA008C9D90 /* ChaoYue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChaoYue.xcdatamodel; sourceTree = "<group>"; };
@@ -333,6 +338,8 @@
 				14B6A73E1EC076B60048C4F6 /* CYCompetitionToolView.m */,
 				14B6A7411EC0808C0048C4F6 /* CYCompetitionToolButton.h */,
 				14B6A7421EC0808C0048C4F6 /* CYCompetitionToolButton.m */,
+				14CFB6211EC157B4000CEBD5 /* CYCompetitionFirstView.h */,
+				14CFB6221EC157B4000CEBD5 /* CYCompetitionFirstView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +643,7 @@
 		145E59041EBC544C006FE89D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				14CFB6291EC19148000CEBD5 /* teamlogo.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -877,6 +885,7 @@
 				14B6A7251EC056750048C4F6 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				14D2E5211EB8CCFA008C9D90 /* LaunchScreen.storyboard in Resources */,
 				14B6A6EE1EC016BB0048C4F6 /* CYImageTableViewCell.xib in Resources */,
+				14CFB62A1EC19148000CEBD5 /* teamlogo.png in Resources */,
 				14B6A71E1EC056750048C4F6 /* ShareSDKUI.bundle in Resources */,
 				14B6A72B1EC056750048C4F6 /* ShareSDK.bundle in Resources */,
 				14B6A7291EC056750048C4F6 /* README.txt in Resources */,
@@ -924,6 +933,7 @@
 				14B6A73C1EC05DF10048C4F6 /* LoginViewController.m in Sources */,
 				143807281EB9678C0009EC0B /* AppDelegate.m in Sources */,
 				143807681EB9B8050009EC0B /* CYEvaluationViewController.m in Sources */,
+				14CFB6231EC157B4000CEBD5 /* CYCompetitionFirstView.m in Sources */,
 				1438074C1EB96E850009EC0B /* CYDiscoverViewController.m in Sources */,
 				1438072E1EB968FF0009EC0B /* CYMainTabbarViewController.m in Sources */,
 				1438076B1EB9B81E0009EC0B /* CYLoseWeightViewController.m in Sources */,
