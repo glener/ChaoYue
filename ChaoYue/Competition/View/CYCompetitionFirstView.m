@@ -203,7 +203,7 @@
     self.scoreLabel.frame = CGRectMake((kScreenWidth - self.scoreLabel.intrinsicContentSize.width) / 2, CGRectGetMaxY(self.teamALogoView.frame), self.scoreLabel.intrinsicContentSize.width, self.scoreLabel.intrinsicContentSize.height);
     self.underwayLabel.frame = CGRectMake((kScreenWidth - self.underwayLabel.intrinsicContentSize.width - 10) / 2, CGRectGetMaxY(self.scoreLabel.frame) + 10, self.underwayLabel.intrinsicContentSize.width + 10, self.underwayLabel.intrinsicContentSize.height + 3);
     
-    self.divider.frame = CGRectMake(10, CGRectGetMaxY(self.frame) + 10, kScreenWidth - 20, 1);
+    self.divider.frame = CGRectMake(10, CGRectGetMaxY(self.frame) - 5, kScreenWidth - 20, 1);
 }
 
 @end

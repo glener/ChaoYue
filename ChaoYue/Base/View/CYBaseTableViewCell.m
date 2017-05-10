@@ -29,7 +29,7 @@
     return self;
 }
 
-
+/** 创建不是xib的tableView*/
 + (instancetype)cellWithTableView:(UITableView *)tableView
 {
     if (tableView == nil) {
@@ -40,7 +40,7 @@
     [tableView registerClass:[self class] forCellReuseIdentifier:identifier];
     return [tableView dequeueReusableCellWithIdentifier:identifier];
 }
-
+/** 创建是xib的tableView*/
 + (instancetype)nibCellWithTableView:(UITableView *)tableView
 {
     if (tableView == nil) {

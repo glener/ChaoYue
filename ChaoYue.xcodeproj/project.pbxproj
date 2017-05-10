@@ -71,10 +71,23 @@
 		14B6A7431EC0808C0048C4F6 /* CYCompetitionToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6A7421EC0808C0048C4F6 /* CYCompetitionToolButton.m */; };
 		14CFB6231EC157B4000CEBD5 /* CYCompetitionFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFB6221EC157B4000CEBD5 /* CYCompetitionFirstView.m */; };
 		14CFB62A1EC19148000CEBD5 /* teamlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14CFB6291EC19148000CEBD5 /* teamlogo.png */; };
+		14CFB62D1EC1AAD7000CEBD5 /* CYHistoryGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFB62C1EC1AAD7000CEBD5 /* CYHistoryGameCell.m */; };
 		14D2E5101EB8CCFA008C9D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E50F1EB8CCFA008C9D90 /* main.m */; };
 		14D2E51C1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14D2E51A1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld */; };
 		14D2E51E1EB8CCFA008C9D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D2E51D1EB8CCFA008C9D90 /* Assets.xcassets */; };
 		14D2E5211EB8CCFA008C9D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D2E51F1EB8CCFA008C9D90 /* LaunchScreen.storyboard */; };
+		14E1FF3E1EC209D70023A1AE /* CYHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E1FF3D1EC209D70023A1AE /* CYHistoryCell.xib */; };
+		14E593891EC2A2C100CC7674 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14E5936F1EC2A2C100CC7674 /* Info.plist */; };
+		14E5938A1EC2A2C100CC7674 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E593711EC2A2C100CC7674 /* MASCompositeConstraint.m */; };
+		14E5938B1EC2A2C100CC7674 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E593741EC2A2C100CC7674 /* MASConstraint.m */; };
+		14E5938C1EC2A2C100CC7674 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E593761EC2A2C100CC7674 /* MASConstraintMaker.m */; };
+		14E5938D1EC2A2C100CC7674 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E593781EC2A2C100CC7674 /* MASLayoutConstraint.m */; };
+		14E5938E1EC2A2C100CC7674 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E5937C1EC2A2C100CC7674 /* MASViewAttribute.m */; };
+		14E5938F1EC2A2C100CC7674 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E5937E1EC2A2C100CC7674 /* MASViewConstraint.m */; };
+		14E593901EC2A2C100CC7674 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E593801EC2A2C100CC7674 /* NSArray+MASAdditions.m */; };
+		14E593911EC2A2C100CC7674 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E593831EC2A2C100CC7674 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		14E593921EC2A2C100CC7674 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E593851EC2A2C100CC7674 /* View+MASAdditions.m */; };
+		14E593931EC2A2C100CC7674 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E593881EC2A2C100CC7674 /* ViewController+MASAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -195,12 +208,41 @@
 		14CFB6211EC157B4000CEBD5 /* CYCompetitionFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCompetitionFirstView.h; sourceTree = "<group>"; };
 		14CFB6221EC157B4000CEBD5 /* CYCompetitionFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCompetitionFirstView.m; sourceTree = "<group>"; };
 		14CFB6291EC19148000CEBD5 /* teamlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teamlogo.png; sourceTree = "<group>"; };
+		14CFB62B1EC1AAD7000CEBD5 /* CYHistoryGameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHistoryGameCell.h; sourceTree = "<group>"; };
+		14CFB62C1EC1AAD7000CEBD5 /* CYHistoryGameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHistoryGameCell.m; sourceTree = "<group>"; };
 		14D2E50B1EB8CCFA008C9D90 /* ChaoYue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaoYue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D2E50F1EB8CCFA008C9D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14D2E51B1EB8CCFA008C9D90 /* ChaoYue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChaoYue.xcdatamodel; sourceTree = "<group>"; };
 		14D2E51D1EB8CCFA008C9D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D2E5201EB8CCFA008C9D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14D2E5221EB8CCFA008C9D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E1FF3D1EC209D70023A1AE /* CYHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYHistoryCell.xib; sourceTree = "<group>"; };
+		14E5936F1EC2A2C100CC7674 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E593701EC2A2C100CC7674 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		14E593711EC2A2C100CC7674 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		14E593721EC2A2C100CC7674 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		14E593731EC2A2C100CC7674 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		14E593741EC2A2C100CC7674 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		14E593751EC2A2C100CC7674 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		14E593761EC2A2C100CC7674 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		14E593771EC2A2C100CC7674 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		14E593781EC2A2C100CC7674 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		14E593791EC2A2C100CC7674 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		14E5937A1EC2A2C100CC7674 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		14E5937B1EC2A2C100CC7674 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		14E5937C1EC2A2C100CC7674 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		14E5937D1EC2A2C100CC7674 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		14E5937E1EC2A2C100CC7674 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		14E5937F1EC2A2C100CC7674 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		14E593801EC2A2C100CC7674 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		14E593811EC2A2C100CC7674 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		14E593821EC2A2C100CC7674 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		14E593831EC2A2C100CC7674 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		14E593841EC2A2C100CC7674 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		14E593851EC2A2C100CC7674 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		14E593861EC2A2C100CC7674 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		14E593871EC2A2C100CC7674 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		14E593881EC2A2C100CC7674 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +382,9 @@
 				14B6A7421EC0808C0048C4F6 /* CYCompetitionToolButton.m */,
 				14CFB6211EC157B4000CEBD5 /* CYCompetitionFirstView.h */,
 				14CFB6221EC157B4000CEBD5 /* CYCompetitionFirstView.m */,
+				14CFB62B1EC1AAD7000CEBD5 /* CYHistoryGameCell.h */,
+				14CFB62C1EC1AAD7000CEBD5 /* CYHistoryGameCell.m */,
+				14E1FF3D1EC209D70023A1AE /* CYHistoryCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -651,6 +696,7 @@
 		14B6A6EF1EC056680048C4F6 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				14E5936E1EC2A2C100CC7674 /* Masonry */,
 				14B6A6F01EC056750048C4F6 /* ShareSDK */,
 			);
 			path = Lib;
@@ -823,6 +869,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		14E5936E1EC2A2C100CC7674 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				14E5936F1EC2A2C100CC7674 /* Info.plist */,
+				14E593701EC2A2C100CC7674 /* MASCompositeConstraint.h */,
+				14E593711EC2A2C100CC7674 /* MASCompositeConstraint.m */,
+				14E593721EC2A2C100CC7674 /* MASConstraint+Private.h */,
+				14E593731EC2A2C100CC7674 /* MASConstraint.h */,
+				14E593741EC2A2C100CC7674 /* MASConstraint.m */,
+				14E593751EC2A2C100CC7674 /* MASConstraintMaker.h */,
+				14E593761EC2A2C100CC7674 /* MASConstraintMaker.m */,
+				14E593771EC2A2C100CC7674 /* MASLayoutConstraint.h */,
+				14E593781EC2A2C100CC7674 /* MASLayoutConstraint.m */,
+				14E593791EC2A2C100CC7674 /* Masonry.h */,
+				14E5937A1EC2A2C100CC7674 /* MASUtilities.h */,
+				14E5937B1EC2A2C100CC7674 /* MASViewAttribute.h */,
+				14E5937C1EC2A2C100CC7674 /* MASViewAttribute.m */,
+				14E5937D1EC2A2C100CC7674 /* MASViewConstraint.h */,
+				14E5937E1EC2A2C100CC7674 /* MASViewConstraint.m */,
+				14E5937F1EC2A2C100CC7674 /* NSArray+MASAdditions.h */,
+				14E593801EC2A2C100CC7674 /* NSArray+MASAdditions.m */,
+				14E593811EC2A2C100CC7674 /* NSArray+MASShorthandAdditions.h */,
+				14E593821EC2A2C100CC7674 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				14E593831EC2A2C100CC7674 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				14E593841EC2A2C100CC7674 /* View+MASAdditions.h */,
+				14E593851EC2A2C100CC7674 /* View+MASAdditions.m */,
+				14E593861EC2A2C100CC7674 /* View+MASShorthandAdditions.h */,
+				14E593871EC2A2C100CC7674 /* ViewController+MASAdditions.h */,
+				14E593881EC2A2C100CC7674 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -888,8 +967,10 @@
 				14CFB62A1EC19148000CEBD5 /* teamlogo.png in Resources */,
 				14B6A71E1EC056750048C4F6 /* ShareSDKUI.bundle in Resources */,
 				14B6A72B1EC056750048C4F6 /* ShareSDK.bundle in Resources */,
+				14E593891EC2A2C100CC7674 /* Info.plist in Resources */,
 				14B6A7291EC056750048C4F6 /* README.txt in Resources */,
 				14B6A71B1EC056750048C4F6 /* ShareSDKConfigFile.bundle in Resources */,
+				14E1FF3E1EC209D70023A1AE /* CYHistoryCell.xib in Resources */,
 				14B6A7271EC056750048C4F6 /* WeiboSDK.bundle in Resources */,
 				14D2E51E1EB8CCFA008C9D90 /* Assets.xcassets in Resources */,
 				14B6A6E91EC001B00048C4F6 /* CYSignTableViewCell.xib in Resources */,
@@ -906,39 +987,50 @@
 			files = (
 				14B6A6ED1EC016BB0048C4F6 /* CYImageTableViewCell.m in Sources */,
 				14B6A6E81EC001B00048C4F6 /* CYSignTableViewCell.m in Sources */,
+				14E593931EC2A2C100CC7674 /* ViewController+MASAdditions.m in Sources */,
 				143807621EB9A9160009EC0B /* CYDiscoverTitleViewItemView.m in Sources */,
 				146B6AC01EBB36AF0003D7BE /* CYSettingViewController.m in Sources */,
+				14E5938A1EC2A2C100CC7674 /* MASCompositeConstraint.m in Sources */,
 				14D2E51C1EB8CCFA008C9D90 /* ChaoYue.xcdatamodeld in Sources */,
 				14D2E5101EB8CCFA008C9D90 /* main.m in Sources */,
+				14E593911EC2A2C100CC7674 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				146B6ABA1EBAD4000003D7BE /* CYUserToolView.m in Sources */,
 				1438076E1EB9B8290009EC0B /* CYSportViewController.m in Sources */,
 				146B6ABD1EBAF9A20003D7BE /* CYUserHeaderView.m in Sources */,
+				14E5938D1EC2A2C100CC7674 /* MASLayoutConstraint.m in Sources */,
 				14B6A7431EC0808C0048C4F6 /* CYCompetitionToolButton.m in Sources */,
 				143807371EB96BDB0009EC0B /* CYBaseTableViewController.m in Sources */,
 				145E59001EBC47EF006FE89D /* CYUserInfoModel.m in Sources */,
 				143807551EB96EC80009EC0B /* CYMeViewController.m in Sources */,
+				14E5938C1EC2A2C100CC7674 /* MASConstraintMaker.m in Sources */,
 				1438075F1EB9A2CF0009EC0B /* CYDiscoverTitleView.m in Sources */,
 				143807781EB9DB530009EC0B /* CYCustomSlideViewController.m in Sources */,
 				145E58F41EBC2146006FE89D /* CYStateViewController.m in Sources */,
 				143807521EB96EB00009EC0B /* CYStoreViewController.m in Sources */,
 				1438074F1EB96E9A0009EC0B /* CYCompetitionViewController.m in Sources */,
+				14E5938E1EC2A2C100CC7674 /* MASViewAttribute.m in Sources */,
 				14B6A73F1EC076B60048C4F6 /* CYCompetitionToolView.m in Sources */,
+				14E5938F1EC2A2C100CC7674 /* MASViewConstraint.m in Sources */,
 				146B6AC31EBB36C30003D7BE /* CYRemindViewController.m in Sources */,
 				145E590B1EBC818D006FE89D /* CYBaseTableViewCell.m in Sources */,
 				145E59031EBC4858006FE89D /* CYBaseModel.m in Sources */,
 				145E58FA1EBC217A006FE89D /* CYFansViewController.m in Sources */,
+				14E5938B1EC2A2C100CC7674 /* MASConstraint.m in Sources */,
 				145E58F71EBC2163006FE89D /* CYFollowViewController.m in Sources */,
 				143807581EB96FF80009EC0B /* CYBaseNavigationViewController.m in Sources */,
 				143807731EB9D4460009EC0B /* UIView+Frame.m in Sources */,
+				14E593901EC2A2C100CC7674 /* NSArray+MASAdditions.m in Sources */,
 				14B6A73C1EC05DF10048C4F6 /* LoginViewController.m in Sources */,
 				143807281EB9678C0009EC0B /* AppDelegate.m in Sources */,
 				143807681EB9B8050009EC0B /* CYEvaluationViewController.m in Sources */,
 				14CFB6231EC157B4000CEBD5 /* CYCompetitionFirstView.m in Sources */,
 				1438074C1EB96E850009EC0B /* CYDiscoverViewController.m in Sources */,
 				1438072E1EB968FF0009EC0B /* CYMainTabbarViewController.m in Sources */,
+				14CFB62D1EC1AAD7000CEBD5 /* CYHistoryGameCell.m in Sources */,
 				1438076B1EB9B81E0009EC0B /* CYLoseWeightViewController.m in Sources */,
 				143807491EB96E620009EC0B /* CYTrainViewController.m in Sources */,
 				145E58FD1EBC2E1E006FE89D /* CYUserHeaderToolButton.m in Sources */,
+				14E593921EC2A2C100CC7674 /* View+MASAdditions.m in Sources */,
 				143807651EB9B7B10009EC0B /* CYRecommendViewController.m in Sources */,
 				143807311EB96B3E0009EC0B /* CYBaseViewController.m in Sources */,
 			);

@@ -26,13 +26,12 @@
     [[UITabBar appearance] setTranslucent:NO];
 //    [UITabBar appearance].clipsToBounds = NO;
     // 设置背景颜色
-    [UITabBar appearance].barTintColor = [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:1];
+    [UITabBar appearance].barTintColor = kRGBAColor(241, 241, 241, 1);
     
     // 拿到整个导航控制器的外观
     UITabBarItem * item = [UITabBarItem appearance];
-    item.titlePositionAdjustment = UIOffsetMake(0, -7);
-    
-
+    //调整文字和icon的距离
+    item.titlePositionAdjustment = UIOffsetMake(0, -5);
     
     // 普通状态
 //    NSMutableDictionary * normalAtts = [NSMutableDictionary dictionary];
