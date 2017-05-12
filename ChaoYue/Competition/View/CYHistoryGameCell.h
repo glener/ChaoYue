@@ -11,4 +11,5 @@
 @interface CYHistoryGameCell : UITableViewCell
 
 +(instancetype)CYHistoryCellWithTableView:(UITableView *)tableView;
+
 @end

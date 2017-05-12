@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "LoginViewController.h"
+//#import "LoginViewController.h"
+#import "LoginController.h"
 #import "CYMainTabbarViewController.h"
 #import <ShareSDK/ShareSDK.h>
 #import <ShareSDKConnector/ShareSDKConnector.h>
@@ -32,10 +33,10 @@
     //设置APP的根控制器及tabbar页面
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    CYMainTabbarViewController *tabbar = [[CYMainTabbarViewController alloc] init];
-    self.window.rootViewController = tabbar;
-//    LoginViewController *login = [[LoginViewController alloc] init];
-//    self.window.rootViewController = login;
+//    CYMainTabbarViewController *tabbar = [[CYMainTabbarViewController alloc] init];
+//    self.window.rootViewController = tabbar;
+    LoginController *login = [[LoginController alloc] init];
+    self.window.rootViewController = login;
     [self.window makeKeyAndVisible];
     
     //第三方登录

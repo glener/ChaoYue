@@ -17,14 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
-    btn.backgroundColor = kNormalColor;
-    self.btn = btn;
-    [btn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    self.loginBtn.backgroundColor = kNormalColor;
+    [self.loginBtn setTitle:@"Dfae" forState:UIControlStateNormal];
+    
+    //    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
+//    btn.backgroundColor = kNormalColor;
+//    self.btn = btn;
+//    [btn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:btn];
 }
 
 - (void)login{
+    
+    
     [ShareSDK getUserInfo:SSDKPlatformTypeSinaWeibo onStateChanged:^(SSDKResponseState state, SSDKUser *user, NSError *error) {
         if (state == SSDKResponseStateSuccess) {
             NSLog(@"uid=%@",user.uid);
@@ -39,19 +44,9 @@
         }
     }];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

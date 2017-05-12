@@ -50,7 +50,7 @@
     
     
     
-    CYCompetitionFirstView *first = [[CYCompetitionFirstView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 200)];
+    CYCompetitionFirstView *first = [[CYCompetitionFirstView alloc] initWithFrame:CGRectMake(0, 64, kScreenWidth, 200)];
     first.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGame)];
     [first addGestureRecognizer:tap];

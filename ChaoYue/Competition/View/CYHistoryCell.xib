@@ -70,6 +70,15 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="date" destination="aM6-BS-s0t" id="jHc-xC-yoA"/>
+                <outlet property="score" destination="jEo-3T-Wv4" id="MG2-KL-OUg"/>
+                <outlet property="teamAImageView" destination="Z1O-DO-UeL" id="Cr0-Bj-2P7"/>
+                <outlet property="teamAname" destination="6ck-Ip-03d" id="z7b-PZ-QjV"/>
+                <outlet property="teamBImageView" destination="51q-Fc-k2s" id="D5I-27-GW1"/>
+                <outlet property="teamBname" destination="wOt-Q0-HNR" id="9Pd-35-b4w"/>
+                <outlet property="time" destination="aXp-2H-zrr" id="DES-Mc-BtO"/>
+            </connections>
         </view>
     </objects>
 </document>

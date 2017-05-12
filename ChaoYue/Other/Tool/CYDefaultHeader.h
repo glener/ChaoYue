@@ -11,6 +11,8 @@
 
 /***  当前屏幕宽度 */
 #define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
+/** 导航栏高度*/
+#define kNavigationH 64
 /***  当前屏幕高度 */
 #define kScreenHeight  [[UIScreen mainScreen] bounds].size.height
 /***  普通字体 */

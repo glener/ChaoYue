@@ -17,6 +17,7 @@
 + (void)initialize {
     // 设置为不透明
     [[UINavigationBar appearance] setTranslucent:NO];
+    
     //去底下黑线
     [UINavigationBar appearance].clipsToBounds = NO;
     // 设置导航栏背景颜色
@@ -47,6 +48,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {

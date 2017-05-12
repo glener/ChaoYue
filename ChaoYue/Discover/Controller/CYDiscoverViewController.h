@@ -8,6 +8,6 @@
 
 #import "CYBaseViewController.h"
 
-@interface CYDiscoverViewController : CYBaseViewController
+@interface CYDiscoverViewController : UIViewController
 
 @end

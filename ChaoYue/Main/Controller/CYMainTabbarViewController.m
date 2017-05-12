@@ -13,6 +13,7 @@
 #import "CYCompetitionViewController.h"
 #import "CYStoreViewController.h"
 #import "CYMeViewController.h"
+#import "CYBaseNavigationController.h"
 
 @interface CYMainTabbarViewController ()
 
@@ -74,7 +75,7 @@
                                       title:(NSString *)title {
     
     UIViewController *vc = [[NSClassFromString(classname) alloc] init];
-    CYBaseNavigationViewController *nav = [[CYBaseNavigationViewController alloc] initWithRootViewController:vc];
+    CYBaseNavigationController *nav = [[CYBaseNavigationController alloc] initWithRootViewController:vc];
     
     nav.tabBarItem.title = title;
     nav.tabBarItem.image = [UIImage imageNamed:imagename];

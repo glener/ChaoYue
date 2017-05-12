@@ -10,5 +10,6 @@
 
 @interface LoginViewController : UIViewController
 @property (weak,nonatomic) UIButton *btn;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end
